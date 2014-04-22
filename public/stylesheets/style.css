@@ -1,0 +1,37 @@
+html, body {
+	margin:0;
+  padding:0;
+	height: 100%;
+	color: #2F4F4F;
+	font-family: Andale Mono;
+	background: #CDC0B0;
+	text-align: center;
+	font-weight: bold;
+}
+
+#container {
+  min-height:100%;
+  position:relative;
+}
+
+#header {
+	background: #8FBC8F;
+	padding: 5px;
+	font-size: 22px;
+}
+
+#body {
+	padding: 10px;
+	padding-bottom: 30px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	font-size: 12px;
+	text-align: left;
+	color: #CDC0B0;
+	background: #528B8B;
+	font-weight: bold;

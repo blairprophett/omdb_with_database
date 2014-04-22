@@ -1,0 +1,20 @@
+<% if @results == nil %>
+	<p>DOH!<br /> We can't find that movie.<br />Please search again or add a new movie to our database.
+		<a href="http://imgur.com/NTTM2YI"><img src="http://i.imgur.com/NTTM2YI.jpg" title="Hosted by imgur.com" /></a>
+			<form method="get" action="/results">
+				<input type="text" name="title" placeholder="Enter Movie Title...">
+				<input value="Search Movie" type="submit">
+			</form><br></br>
+
+			<form method="get" action="/movies/new">
+				<input value="Add a New Movie" type="submit">
+			</form>
+	</p>
+
+
+		<% else @results.each do |movie| %>
+		<a href="/title/<%=movie['id']%>">
+			<%= movie["title"] %>
+			<%= movie["year"]%></a>
+		<% end %>
+<% end %>
